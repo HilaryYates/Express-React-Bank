@@ -9,6 +9,12 @@ class Add extends Component {
     this.setState({ description: evt.target.value });
     // console.log(this.state.description);
   };
+  handleAmount = (evt) => {
+    const amount = parseInt(evt.target.value);
+    // console.log(amount);
+    this.setState({ amount: amount });
+    // console.log(this.state.amount);
+  };
   render = () => {
     return (
       <div>
