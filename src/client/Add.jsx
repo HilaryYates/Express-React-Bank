@@ -4,7 +4,11 @@ class Add extends Component {
     super(props);
     this.state = { description: "", amount: 0 };
   }
-
+  handleDescription = (evt) => {
+    // console.log(evt.target.value);
+    this.setState({ description: evt.target.value });
+    // console.log(this.state.description);
+  };
   render = () => {
     return (
       <div>
